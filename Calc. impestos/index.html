@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <title>Calculo de impuestos</title>
+</head>
+<body>
+    <main>
+        <div class="contenido">
+            <div class="cont_titulo">
+                <h1>
+                    Calcular impuestos
+                </h1>
+            </div>
+
+            <section>
+                <div class="titulo_desc">
+                    <h2>
+                        Seleccione el tiempo que desea calcular
+                    </h2>
+                </div>
+
+                <div class="desicion">
+                    <input type="button" value="Calculo mensual" onclick="abrir()">
+                    
+                    <input type="button" value="Calculo anual" onclick="abrir2()">
+                </div>
+
+                <div class="cont_section">
+    
+                    <article id="mensual" class="apariencia">
+                        <div class="btnRet">
+                            <input type="button" value="X" onclick="cerrar()">
+                        </div>
+
+                        <div class="contArt">
+
+                            <h3 class="titulo_art">
+                                Calcular el impuesto mensual
+                            </h3>
+
+                            <div class="contArt_ing">
+                                
+                                <input type="text" placeholder="Ingrese monto" onfocus="vaciar(this)" id="dinero">
+                                
+                                <button type="button" onclick="calcular()">Calcular</button>
+                               
+                            </div>
+        
+                            <div class="results">
+                                <h3 class="titulo_result">
+                                    El total de impuestos a pagar es de:
+                                </h3>
+                                
+                                <div>
+                                    <p id="resultado">
+                                        $
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+    
+                    <article id="anual" class="apariencia">
+                        <div class="btnRet">
+                            <input type="button" value="X" onclick="cerrar2()">
+                        </div>
+
+                        <div class="contArt">
+
+                            <h3 class="titulo_art">
+                                Calcular el impuesto anual
+                            </h3>
+                            
+                            <div class="contArt_ing">
+                                    <input type="text" placeholder="ingrese monto" onfocus="vaciar(this)" id="dinero2">
+                                    
+                                    <button type="button" onclick="calcular2()">Calcular</button>
+                                
+                            </div>
+        
+                            <div class="results">
+                                <h3 class="titulo_result">
+                                    El total de impuestos a pagar es de:
+                                </h3>
+                                
+                                <div>
+                                    <p id="resultado2">
+                                        $0.00
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+    
+                <div class="ayuda">
+                    <button >
+                        !
+                    </button>
+
+                    <div id="info">
+                        <p>
+                            Este sitio te ayuda a calcular cuánto es el impuesto que debes pagar, 
+                            ya sea anual o mensualmente, dependiendo de tus ganancias.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <footer class="creator"> 
+        Coded by <a href="https://github.com/Anthonn007" target="_blank">Anthony Urbaez</a>.
+    </footer>
+    <script src="mensual.js"></script>
+    <script src="anual.js"></script>
+    <script src="desicion.js"></script>
+</body>
+</html>

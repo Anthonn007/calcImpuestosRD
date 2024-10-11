@@ -1,0 +1,237 @@
+/* colores a usar */
+:root{
+    --white: #ffff;
+    --black: #000;
+    --dark_blue: #1a1c44;
+    --blue_palid: #304062;
+    --gray: #d9dadb;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+#mensual, #anual, #info{
+    display: none;
+}
+
+
+
+/* diseños botones */
+
+.desicion input:hover, .ayuda:hover, .contArt_ing button:hover, .btnRet input:hover{
+    background: var(--blue_palid);
+    transition: .1s linear;
+}
+
+.desicion input{
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin: 10px 0;
+    border: 1px solid var(--border);
+    cursor: pointer;
+    background: var(--dark_blue);
+    color: var(--white);
+    font-weight: 800;
+    font-size: 16px;
+    width: 100%;
+}
+
+.btnRet{
+    position: absolute;
+    top: 0 ;
+    left: 0;
+    margin: 10px;
+}
+
+.btnRet input{
+    padding: 5px;
+    cursor: pointer;
+    color: var(--white);
+    border: 1px solid var(--blue_palid);
+    background: var(--dark_blue);
+    border-radius: 50%;
+    font-weight: 800;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.contArt_ing input, .contArt_ing button{
+    display: block;
+    width: 100%;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid var(--blue_palid);
+}
+
+.contArt_ing button{
+    cursor: pointer;
+    background: var(--dark_blue);
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--white);
+}
+
+.ayuda button{
+    border: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: none;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--white);
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+
+
+/* diseño pagina */
+
+body{
+    background: var(--gray);
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido{
+    display: inline-block;
+    position: relative;
+    background: var(--dark_blue);
+    box-shadow: 1px 1px 10px #000;
+    border: 1px solid var(--dark_blue);
+    border-radius: 10px;
+    width: 350px;
+    color: var(--white);
+}
+
+.cont_titulo{
+    padding: 10px;
+}
+
+section{
+    background: var(--white);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.titulo_desc{
+    color: #1a1c44;
+    padding: 10px 0;
+    font-size: 20px;
+}
+.cont_section{
+    width: 100%;
+    height: 100%;
+}
+
+.desicion{
+    padding: 110px 50px 190px ;
+}
+
+.apariencia{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 100px 20px;
+    top: 0;
+    left: 0;
+    background: var(--white);
+    border-radius: 10px;
+    color: var(--dark_blue);
+}
+
+.titulo_art{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.contArt_ing{
+    margin: 30px 0;
+}
+
+#dinero, #dinero2{
+    font-size: 16px;
+    color: var(--dark_blue);
+}
+
+.results{
+    background: var(--dark_blue);
+    color: var(--white);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.titulo_result{
+    margin-bottom: 20px;
+}
+
+.results p{
+    margin: 0 30px;
+    padding: 5px;
+    border: 1px solid var(--blue_palid);
+    background: var(--white);
+    border-radius: 5px;
+    color: var(--dark_blue);
+    font-weight: 800;
+}
+
+.ayuda:hover > #info{
+    display: block;
+}
+
+.ayuda{
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    background: var(--dark_blue);
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid var(--blue_palid);
+}
+
+#info{
+    width: 200px;
+    left: -180px;
+    top: -155px;
+    background: var(--dark_blue);
+    padding: 10px;
+    position: absolute;
+    border-radius: 10px;
+    border: 1px solid var(--blue_palid);
+    color: var(--white);
+}
+
+.creator { 
+    font-size: 12px; 
+    text-align: center; 
+    color: var(--dark_blue);
+}
+.creator a { 
+    color: var(--dark_blue); 
+}
